@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martín Fierro Juego</title>
+    <!-- Importa el archivo de CSS -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Pantalla de inicio -->
+    <div id="inicio" class="inicio-screen">
+        <h1>Bienvenido a Martín Fierro - El Juego del Gaucho</h1>
+        <p>Ayuda a Martin Fierro a encontrar sus 6 objetos preciados para recuperar su honor.</p>
+        <p>Fierro ha sido acusado de "falluta" y para volver a ser respetado entre los gauchos</p>
+        <p>debe encontrar sus preciados objetos. Estos son: una guitarra, un sombrero, un poncho,</p>
+        <p>un mate, un cuchillo y un crucifijo. Tienes un periodo de 2 min para lograrlo, durante</p>
+        <p>el primer minuto, sera de dia y por ende mas facil la busqueda, sin embargo en el segundo</p>
+        <p>minuto, anochecera y tendras que usar la linterna para navegar por el mapa. Cuando estes</p>
+        <p>frente a un objeto, haz click izquierdo sobre el mismo para tomarlo. Usa las teclas</p>
+        <p>w,a,s,d para moverte, w para delante, a izquierda, s atras, d derecha. Buena Suerte!</p>
+        <button id="playButton">Play</button>
+    </div>
+
+    <!-- Pantalla de victoria -->
+    <div id="winScreen" class="overlay" style="display:none;">
+        <div class="message">Felicitaciones ¡Has ganado!</div>
+    </div>
+
+    <!-- Pantalla de derrota -->
+    <div id="loseScreen" class="overlay" style="display:none;">
+        <div class="message">Lo siento ¡Has perdido!</div>
+    </div>
+
+    <!-- Contenedor para la escena del juego -->
+    <div id="gameContainer" style="display:none;">
+    </div>
+
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>
